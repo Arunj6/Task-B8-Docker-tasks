@@ -1,0 +1,21 @@
+Task 6
+==========
+
+Create a docker image with centos as base image, Install httpd and copy the sample website content template to the root directory.
+Set the "MAINTAINER" directive with your name.
+
+Task 7
+========
+
+Create your own custom Docker image with nginx container with a "indexfile" having your name and push this image to your dockerhub registry with a tag version 1.
+Similarly, create a custom Docker image with nginx with a sample 'website template' and push this image to the dockerhub registry and tag this image with the name version 2 as well as 'latest' along with this image.
+Share the dockerhub pull command for this image and deploy the image and make sure it works
+
+
+Task 5)  
+====>  Run a nginx container and publish any port to the outside world, similarly run a httpd container with a website template and publish any port to the outside world.
+ Make sure that the both nginx and apache is running. Spin up a haproxy container and route the traffic to these containers. (refer docker hub for ha-proxy to know how this can be run)
+
+Hint : Check the diagram, in ha-proxy conf just add the backend servers (nginx and apache) and volume mount this ha-proxy conf to the ha-proxy container's default conf location.
+
+
