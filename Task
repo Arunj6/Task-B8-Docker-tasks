@@ -13,7 +13,7 @@ docker exec -it myctr bash
 -----------------
 Task 3
 -----------
-docker run -itd -v /home/ec2-user/website/:/usr/local/apache2/htdocs/ --name apache httpd
+docker run -itd -v /home/ec2-user/website/:/usr/local/apache2/htdocs/ --name apache -p 90:80 httpd
 ------------------------
 
 Task 4
